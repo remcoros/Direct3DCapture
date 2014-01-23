@@ -1,0 +1,18 @@
+Capture / Record screenshots using DirectX
+
+--
+
+This is based on: https://github.com/spazzarama/Direct3DHook
+
+I ran into some issues with the original code (fullscreen alt-tabbing, lost devices, etc.)
+
+I studied and ported the Direct3D hook from the OBS project (https://github.com/jp9000/OBS)
+
+Note that this OBS hook is overkill for taking screenshots. It records a constant stream, and uses buffers to optimize it. Way too much for just taking some screenshots.
+
+After porting it, studying it and reading some Direct3D documentation. I got a better understanding of how to implement the original screenshot hook.
+
+NOTE: The original hook I ported from OBS is called DXHookD3D9Obs. It still has bugs, because I didn't continue testing it.
+
+NOTE2: OBS is licensed under GPL (see COPYING). As this project now contains work originally created by OBS authors, it's licensed as GPL as well.
+
